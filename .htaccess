@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /codeigniter_blog/index.php/$1 [L]
+ErrorDocument 404 /codeigniter_blog/index.php/
